@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{BB06D10E-18AF-4B7C-A0F0-8D46715A0351}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AcerosOchoDeJulio</RootNamespace>
+    <AssemblyName>AcerosOchoDeJulio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\Desktop\programas\MySQL\connector\bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1_4_250mm.cs" />
+    <Compile Include="1_4_250mm.Designer.cs">
+      <DependentUpon>1_4_250mm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_8_125mm.cs" />
+    <Compile Include="1_8_125mm.Designer.cs">
+      <DependentUpon>1_8_125mm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3_16_187mm.cs" />
+    <Compile Include="3_16_187mm.Designer.cs">
+      <DependentUpon>3_16_187mm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agregar_Usuario.cs" />
+    <Compile Include="agregar_Usuario.Designer.cs">
+      <DependentUpon>agregar_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="angulo_1_2.cs" />
+    <Compile Include="angulo_1_2.Designer.cs">
+      <DependentUpon>angulo_1_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="angulo_1_4.cs" />
+    <Compile Include="angulo_1_4.Designer.cs">
+      <DependentUpon>angulo_1_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="angulo_1_8.cs" />
+    <Compile Include="angulo_1_8.Designer.cs">
+      <DependentUpon>angulo_1_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="angulo_3_16.cs" />
+    <Compile Include="angulo_3_16.Designer.cs">
+      <DependentUpon>angulo_3_16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="angulo_3_4.cs" />
+    <Compile Include="angulo_3_4.Designer.cs">
+      <DependentUpon>angulo_3_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="angulo_3_8.cs" />
+    <Compile Include="angulo_3_8.Designer.cs">
+      <DependentUpon>angulo_3_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="angulo_5_8.cs" />
+    <Compile Include="angulo_5_8.Designer.cs">
+      <DependentUpon>angulo_5_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="azul_c_14.cs" />
+    <Compile Include="azul_c_14.Designer.cs">
+      <DependentUpon>azul_c_14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BdComun.cs" />
+    <Compile Include="blanco.cs" />
+    <Compile Include="blanco.Designer.cs">
+      <DependentUpon>blanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarCliente.cs" />
+    <Compile Include="BuscarCliente.Designer.cs">
+      <DependentUpon>BuscarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarMaterial.cs" />
+    <Compile Include="BuscarMaterial.Designer.cs">
+      <DependentUpon>BuscarMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarProveedor.cs" />
+    <Compile Include="BuscarProveedor.Designer.cs">
+      <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buscar_Uasuario.cs" />
+    <Compile Include="buscar_Uasuario.Designer.cs">
+      <DependentUpon>buscar_Uasuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHerramientas.cs" />
+    <Compile Include="CHerramientas.Designer.cs">
+      <DependentUpon>CHerramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.cs" />
+    <Compile Include="Clientesmet.cs" />
+    <Compile Include="cold_roll.cs" />
+    <Compile Include="cold_roll.Designer.cs">
+      <DependentUpon>cold_roll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cps_canal_u.cs" />
+    <Compile Include="cps_canal_u.Designer.cs">
+      <DependentUpon>cps_canal_u.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cuadrados.cs" />
+    <Compile Include="cuadrados.Designer.cs">
+      <DependentUpon>cuadrados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="c_10_013mm.cs" />
+    <Compile Include="c_10_013mm.Designer.cs">
+      <DependentUpon>c_10_013mm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="c_12_104mm.cs" />
+    <Compile Include="c_12_104mm.Designer.cs">
+      <DependentUpon>c_12_104mm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="c_14_074mm.cs" />
+    <Compile Include="c_14_074mm.Designer.cs">
+      <DependentUpon>c_14_074mm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="c_30.cs" />
+    <Compile Include="c_30.Designer.cs">
+      <DependentUpon>c_30.cs</DependentUpon>
+    </Compile>
+    <Compile Include="c_40.cs" />
+    <Compile Include="c_40.Designer.cs">
+      <DependentUpon>c_40.cs</DependentUpon>
+    </Compile>
+    <Compile Include="c_80.cs" />
+    <Compile Include="c_80.Designer.cs">
+      <DependentUpon>c_80.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Herramientas.cs" />
+    <Compile Include="Herramientas.Designer.cs">
+      <DependentUpon>Herramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lamina_c_10.cs" />
+    <Compile Include="lamina_c_10.Designer.cs">
+      <DependentUpon>lamina_c_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lamina_c_12.cs" />
+    <Compile Include="lamina_c_12.Designer.cs">
+      <DependentUpon>lamina_c_12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lamina_c_14.cs" />
+    <Compile Include="lamina_c_14.Designer.cs">
+      <DependentUpon>lamina_c_14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lamina_c_16.cs" />
+    <Compile Include="lamina_c_16.Designer.cs">
+      <DependentUpon>lamina_c_16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lamina_c_18.cs" />
+    <Compile Include="lamina_c_18.Designer.cs">
+      <DependentUpon>lamina_c_18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lamina_c_20.cs" />
+    <Compile Include="lamina_c_20.Designer.cs">
+      <DependentUpon>lamina_c_20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lamina_c_26.cs" />
+    <Compile Include="lamina_c_26.Designer.cs">
+      <DependentUpon>lamina_c_26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material.cs" />
+    <Compile Include="MaterialesDal.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="monten_c_14.cs" />
+    <Compile Include="monten_c_14.Designer.cs">
+      <DependentUpon>monten_c_14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proveedor.cs" />
+    <Compile Include="proveedor.Designer.cs">
+      <DependentUpon>proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedorC.cs" />
+    <Compile Include="ProveeedoresE.cs" />
+    <Compile Include="redondos.cs" />
+    <Compile Include="redondos.Designer.cs">
+      <DependentUpon>redondos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rojo.cs" />
+    <Compile Include="rojo.Designer.cs">
+      <DependentUpon>rojo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solera_1.cs" />
+    <Compile Include="solera_1.Designer.cs">
+      <DependentUpon>solera_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solera_1_2.cs" />
+    <Compile Include="solera_1_2.Designer.cs">
+      <DependentUpon>solera_1_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solera_1_4.cs" />
+    <Compile Include="solera_1_4.Designer.cs">
+      <DependentUpon>solera_1_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solera_1_8.cs" />
+    <Compile Include="solera_1_8.Designer.cs">
+      <DependentUpon>solera_1_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solera_3_16.cs" />
+    <Compile Include="solera_3_16.Designer.cs">
+      <DependentUpon>solera_3_16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solera_3_4.cs" />
+    <Compile Include="solera_3_4.Designer.cs">
+      <DependentUpon>solera_3_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solera_3_8.cs" />
+    <Compile Include="solera_3_8.Designer.cs">
+      <DependentUpon>solera_3_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solera_5_16.cs" />
+    <Compile Include="solera_5_16.Designer.cs">
+      <DependentUpon>solera_5_16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solera_5_8.cs" />
+    <Compile Include="solera_5_8.Designer.cs">
+      <DependentUpon>solera_5_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tuberia_diametros_mayores.cs" />
+    <Compile Include="tuberia_diametros_mayores.Designer.cs">
+      <DependentUpon>tuberia_diametros_mayores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tubular.cs" />
+    <Compile Include="tubular.Designer.cs">
+      <DependentUpon>tubular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.cs" />
+    <Compile Include="Usuarios_DAL.cs" />
+    <Compile Include="varilla_corrugada.cs" />
+    <Compile Include="varilla_corrugada.Designer.cs">
+      <DependentUpon>varilla_corrugada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verde.cs" />
+    <Compile Include="verde.Designer.cs">
+      <DependentUpon>verde.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viga_ips.cs" />
+    <Compile Include="viga_ips.Designer.cs">
+      <DependentUpon>viga_ips.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="1_4_250mm.resx">
+      <DependentUpon>1_4_250mm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_8_125mm.resx">
+      <DependentUpon>1_8_125mm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3_16_187mm.resx">
+      <DependentUpon>3_16_187mm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregar_Usuario.resx">
+      <DependentUpon>agregar_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="angulo_1_2.resx">
+      <DependentUpon>angulo_1_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="angulo_1_4.resx">
+      <DependentUpon>angulo_1_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="angulo_1_8.resx">
+      <DependentUpon>angulo_1_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="angulo_3_16.resx">
+      <DependentUpon>angulo_3_16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="angulo_3_4.resx">
+      <DependentUpon>angulo_3_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="angulo_3_8.resx">
+      <DependentUpon>angulo_3_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="angulo_5_8.resx">
+      <DependentUpon>angulo_5_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="azul_c_14.resx">
+      <DependentUpon>azul_c_14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blanco.resx">
+      <DependentUpon>blanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarCliente.resx">
+      <DependentUpon>BuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarMaterial.resx">
+      <DependentUpon>BuscarMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarProveedor.resx">
+      <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buscar_Uasuario.resx">
+      <DependentUpon>buscar_Uasuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHerramientas.resx">
+      <DependentUpon>CHerramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cold_roll.resx">
+      <DependentUpon>cold_roll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cps_canal_u.resx">
+      <DependentUpon>cps_canal_u.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cuadrados.resx">
+      <DependentUpon>cuadrados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="c_10_013mm.resx">
+      <DependentUpon>c_10_013mm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="c_12_104mm.resx">
+      <DependentUpon>c_12_104mm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="c_14_074mm.resx">
+      <DependentUpon>c_14_074mm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="c_30.resx">
+      <DependentUpon>c_30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="c_40.resx">
+      <DependentUpon>c_40.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="c_80.resx">
+      <DependentUpon>c_80.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Herramientas.resx">
+      <DependentUpon>Herramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lamina_c_10.resx">
+      <DependentUpon>lamina_c_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lamina_c_12.resx">
+      <DependentUpon>lamina_c_12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lamina_c_14.resx">
+      <DependentUpon>lamina_c_14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lamina_c_16.resx">
+      <DependentUpon>lamina_c_16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lamina_c_18.resx">
+      <DependentUpon>lamina_c_18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lamina_c_20.resx">
+      <DependentUpon>lamina_c_20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lamina_c_26.resx">
+      <DependentUpon>lamina_c_26.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="monten_c_14.resx">
+      <DependentUpon>monten_c_14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="proveedor.resx">
+      <DependentUpon>proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="redondos.resx">
+      <DependentUpon>redondos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rojo.resx">
+      <DependentUpon>rojo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solera_1.resx">
+      <DependentUpon>solera_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solera_1_2.resx">
+      <DependentUpon>solera_1_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solera_1_4.resx">
+      <DependentUpon>solera_1_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solera_1_8.resx">
+      <DependentUpon>solera_1_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solera_3_16.resx">
+      <DependentUpon>solera_3_16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solera_3_4.resx">
+      <DependentUpon>solera_3_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solera_3_8.resx">
+      <DependentUpon>solera_3_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solera_5_16.resx">
+      <DependentUpon>solera_5_16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solera_5_8.resx">
+      <DependentUpon>solera_5_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tuberia_diametros_mayores.resx">
+      <DependentUpon>tuberia_diametros_mayores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tubular.resx">
+      <DependentUpon>tubular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="varilla_corrugada.resx">
+      <DependentUpon>varilla_corrugada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verde.resx">
+      <DependentUpon>verde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viga_ips.resx">
+      <DependentUpon>viga_ips.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>
